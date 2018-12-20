@@ -1,0 +1,43 @@
+.hero
+	position: relative
+	height: 100vh
+	min-height: 630px
+	background-color: rgba($color: #2b2e26, $alpha: 0.5)
+	+sm
+		height: auto
+	.error
+		color: #fff
+	&__video
+		position: relative
+		height: 100%
+		width: 100%
+		+sm
+			position: absolute
+			top: 0
+			left: 0
+		&:before
+			position: absolute
+			left: 0
+			top: 0
+			bottom: 0
+			right: 0
+			content: ""
+			z-index: 1
+			background-color: rgba(#142338, 0.45) 
+	&__container
+		position: absolute
+		top: 0
+		left: 0
+		height: 100%
+		width: 100%
+		z-index: 4
+		color: #fff
+		padding: 100px 0 85px
+		+vertical
+		+md
+			padding: 49px 0 0
+		+sm
+			position: relative
+		&:before
+			+sm
+				display: none
