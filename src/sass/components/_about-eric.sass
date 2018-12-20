@@ -1,22 +1,22 @@
 .about-eric
 	position: relative
-	+montserrat
-	padding-top: 150px
+	font-family: $montserrat
+	padding-top: 145px
 	padding-bottom: 75px
 
-	&__container
-		position: relative
-		max-width: 970px
-		margin: 0 auto
+	&__inner
 
 	&__background
 		position: absolute
 		.icon
+			position: absolute
 			font-size: 563px
 			stroke: $violet
 			opacity: .1
+			left: -382px
+			top: 98px
 
-	&__inner
+	&__wrapper
 		position: relative
 		display: flex
 		justify-content: space-between
@@ -24,19 +24,28 @@
 
 	&__phone
 		width: 35%
+		+sm
+			display: none
 
 	&__phone-image
+		width: 100%
 
 	&__text
 		width: 56%
+		+sm
+			width: 100%
 
 	&__title
+		font-size: 36px
+		font-weight: 900
 
 	&__descr
+		letter-spacing: 0.015em
+		margin-top: 32px
 		font-size: 15px
 		font-weight: 500
 		color: $black
 		line-height: 1.667
 
 	&__break
-		line-height: 2
+		line-height: 3.1
