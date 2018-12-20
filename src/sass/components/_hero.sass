@@ -32,7 +32,8 @@
 		width: 100%
 		z-index: 4
 		color: #fff
-		padding: 100px 0 85px
+		padding: 133px 0 136px
+		letter-spacing: 0
 		+vertical
 		+md
 			padding: 49px 0 0
@@ -41,3 +42,57 @@
 		&:before
 			+sm
 				display: none
+	&__content
+		display: inline-block
+		vertical-align: middle
+		width: 100%
+		font-size: 15px
+		text-align: left
+		letter-spacing: .5px
+		+sm
+			display: block
+			padding-top: 30px
+	&__footer
+		margin-top: 40px
+		display: flex
+		align-items: center
+	&__consultation
+		margin-left: 30px
+		color: $lightGray
+		font-weight: 700
+	&__date
+		font-size: 18px
+		font-weight: 700
+		opacity: 0.9
+	&__title
+		margin-top: 17px
+		font-size: 48px
+		font-weight: 900
+	&__text
+		margin-top: 20px
+		max-width: 555px
+		letter-spacing: normal
+		line-height: 1.74
+	&__scroll
+		position: absolute
+		bottom: 32px
+		left: 50%
+		transform: translateX(-50%)
+	&__dots
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-top: 16px
+	&__dot
+		display: block
+		width: 4px
+		height: 4px
+		background-color: $white
+		border-radius: 50%
+		opacity: 0.5
+		&.is-active
+			width: 8px
+			height: 8px
+			opacity: 1
+		&:not(:first-child)
+			margin-top: 11px

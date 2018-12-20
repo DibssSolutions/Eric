@@ -16,9 +16,11 @@
     <div class="out">
       <header class="header js-header">
         <div class="header__inner inner">
-          <div class="header__logo">
-            <img src="./img/logo@2x.png" alt="logo">
-          </div>
+          <h1 class="header__logo">
+            <a href="#hero" class="header__link">
+              <img src="./img/logo@2x.png" alt="logo">
+            </a>
+          </h1>
           <div class="header__wrap">
             <nav class="header__nav nav">
               <ul class="nav__list">
@@ -68,12 +70,36 @@
           </button>
         </div>
       </header>
-      <div class="hero js-navigation-section">
+      <div class="hero js-navigation-section" id="hero">
         <div class="hero__video js-video" data-vide-bg="mp4: video/pilates" data-vide-options="posterType: jpg, loop: true, playsinline: true"></div>
         <div class="hero__container">
           <div class="hero__content">
             <div class="hero__inner inner">
+              <div class="hero__date"> 01.02.2019 (осталось 4 дня) </div>
+              <h2 class="hero__title"> Семинар Эрика Франклина </h2>
+              <div class="hero__text">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget. </p>
+              </div>
+              <div class="hero__footer">
+                <div class="hero__btn">
+                  <button class="btn">ЗАПИСАТЬСЯ</button>
+                </div>
+                <div class="hero__consultation"> Получить бесплатную консультацию </div>
+              </div>
             </div>
+          </div>
+          <div class="hero__scroll">
+            <button class="btn-down">
+              <svg class="icon icon-arrow-down">
+                <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+              </svg>
+            </button>
+            <ul class="hero__dots">
+              <li class="hero__dot"></li>
+              <li class="hero__dot"></li>
+              <li class="hero__dot"></li>
+              <li class="hero__dot is-active"></li>
+            </ul>
           </div>
         </div>
       </div>
