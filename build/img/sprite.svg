@@ -1,4 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icon-facebook" viewBox="0 0 10 19">
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs>
+        <path id="a" d="M747.182 782.025l3.889 4.677a.857.857 0 0 0 1.176.116c.339-.275.395-.83.117-1.165l-2.769-3.328h11.572a.83.83 0 0 0 .833-.825.83.83 0 0 0-.833-.825h-11.572l2.77-3.328c.277-.335.214-.882-.118-1.165-.342-.291-.899-.22-1.176.116l-3.89 4.678c-.252.352-.23.708 0 1.049z"/>
+    </defs><symbol id="icon-arrow-down" viewBox="0 0 11 15">
+    
+    <use xlink:href="#a" transform="rotate(-90 -7 769)"/>
+</symbol><symbol id="icon-facebook" viewBox="0 0 10 19">
     <title>
         facebook
     </title>

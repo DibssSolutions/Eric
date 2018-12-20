@@ -8,6 +8,8 @@
     outline: none
     font-weight: 700
     transition: transform .3s
+    font-family: $montserrat
+    letter-spacing: 0.5px
     +hover
         transform: scale(1.05)
     &_white
@@ -24,3 +26,21 @@
     border-radius: 50%
     color: $white
     background-color: $violet
+    font-size: 15px
+    display: flex
+    align-items: center
+    justify-content: center
+    position: relative
+    transition: transform .3s
+    +hover
+        transform: scale(1.05)
+    &:after
+        content: ""
+        position: absolute
+        left: -5px
+        top: -5px
+        bottom: -5px
+        right: -5px
+        border-radius: 50%
+        background-color: $violet
+        opacity: 0.2
