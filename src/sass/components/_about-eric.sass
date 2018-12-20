@@ -1,14 +1,26 @@
 .about-eric
+	position: relative
+	+montserrat
 	padding-top: 150px
 	padding-bottom: 75px
 
 	&__container
+		position: relative
 		max-width: 970px
 		margin: 0 auto
 
+	&__background
+		position: absolute
+		.icon
+			font-size: 563px
+			stroke: $violet
+			opacity: .1
+
 	&__inner
+		position: relative
 		display: flex
 		justify-content: space-between
+
 
 	&__phone
 		width: 35%
@@ -21,5 +33,10 @@
 	&__title
 
 	&__descr
+		font-size: 15px
+		font-weight: 500
+		color: $black
+		line-height: 1.667
 
-	&__descr-paragraph
+	&__break
+		line-height: 2
