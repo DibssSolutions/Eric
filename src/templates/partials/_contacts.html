@@ -1,0 +1,34 @@
+<section class="contacts">
+    <div class="wave-bg" style="background-image: url(./img/section-bg.svg)"></div>
+    <div class="contacts__inner inner">
+        <div class="contacts__content">
+            <div class="contacts__text">
+                <h2 class="contacts__title title">
+                    Контакты
+                </h2>
+                {% for item in [
+                    {
+                        label: 'Почта',
+                        value: 'info@franklinmethod-dance.ru'
+                    },
+                    {
+                        label: 'Телефон',
+                        value: '+7 (495) 255-30-56'
+                    }
+                ] %}
+                    <div class="contacts__block">
+                        <div class="contacts__label">
+                            {{ item.label }}
+                        </div>
+                        <div class="contacts__value">
+                            {{ item.value }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="contacts__form">
+                {{ mixins.form({question: true}) }}
+            </div>
+        </div>
+    </div>
+</section>
