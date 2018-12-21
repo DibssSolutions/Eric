@@ -1,0 +1,81 @@
+.for-whom
+	padding-top: 92px
+
+	&__inner
+		display: flex
+		justify-content: space-between
+		+md
+			flex-wrap: wrap
+
+	&__text
+		width: 50%
+		+md
+			width: 100%
+
+	&__title
+
+	&__descr
+		margin-top: 32px
+		max-width: 440px
+		+md
+			max-width: none
+
+	&__list
+		margin-top: 25px
+		+md
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+
+	&__item
+		max-width: 376px
+		margin-bottom: 43px
+		display: flex
+		align-items: center
+		+md
+			width: 49%
+			max-width: none
+		+sm
+			width: 100%
+			margin-bottom: 16px
+
+	&__item-position
+		display: flex
+		flex-shrink: 0
+		align-items: center
+		justify-content: center
+		font-weight: 700
+		width: 45px
+		height: 45px
+		border: 1px $lightGray solid
+		border-radius: 50%
+
+	&__item-text
+		margin-left: 20px
+
+	&__images
+		margin-left: auto
+		width: 49%
+		+md
+			width: 100%
+
+	&__image-list
+		margin-top: -12px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+
+	&__image-item
+		margin-top: 30px
+		width: calc(50% - 12px)
+
+	&__image-bg
+		box-shadow: 0 35px 60px -24px rgba(37, 35, 35, 0.5)
+		border-radius: 20px
+		min-height: 359px
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		+sm
+			min-height: 220px
+
