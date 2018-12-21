@@ -1,5 +1,42 @@
+{% import 'data/method-data.html' as data %}
 <section class="method">
+  <div class="method__wave-bg wave-bg" style="background-image: url(./img/method-bg.svg)"></div>
 
-  <div class="method__background"></div>
-
+  <div class="method__inner inner">
+    <div class="method__background">
+      {{ mixins.icon('waved-oval') }}
+      <div class="method__particle-first particle particle_rotate-thirty"></div>
+      <div class="method__particle-second particle particle_sm "></div>
+      <div class="method__particle-third particle particle_rotate-thirty"></div>
+      <div class="method__particle-fourth particle particle_lg particle_rotate-thirty "></div>
+      <div class="method__particle-fifth particle particle particle_rotate-thirty"></div>
+      <div class="method__particle-sixth particle particle_sm "></div>
+      <div class="method__particle-seventh particle particle_sm "></div>
+      <div class="method__particle-eighth particle particle_rotate-thirty"></div>
+      <div class="method__particle-ninth particle particle_sm "></div>
+      <div class="method__particle-tenth particle particle_rotate-thirty "></div>
+    </div>
+    <div class="method__title title">О методе</div>
+    <ul class="method__text-list">
+      {% for item in data.list %}
+        <li class="method__text-item">
+          <p class="method__text">
+            {{ item | safe }}
+          </p>
+        </li>
+      {% endfor %}
+    </ul>
+    <ul class="method__video-list">
+      <li class="method__video-item video">
+        <div class="video__image" style="background-image: url(./img/method-video-first.png)">
+          <button type="button" class="video__btn btn-circle btn-circle_lg">{{ mixins.icon('icon-play') }}</button>
+        </div>
+      </li>
+      <li class="method__video-item video">
+        <div class="video__image" style="background-image: url(./img/method-video-second.png)">
+          <button type="button" class="video__btn btn-circle btn-circle_lg">{{ mixins.icon('icon-play') }}</button>
+        </div>
+      </li>
+    </ul>
+  </div>
 </section>

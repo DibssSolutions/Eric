@@ -1,0 +1,16 @@
+{% import "data/slider-data.html" as data %}
+<section class="feedback">
+  <div class="method__wave-bg wave-bg" style="background-image: url(./img/feedback-bg.svg)"></div>
+  <div class="feedback__inner inner">
+
+    <div class="feedback__slider js-slider">
+      {% for item in data.list %}
+        <div class="feedback__slide">
+          <p class="feedback__text">{{ item.text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+
+</section>

@@ -1,11 +1,101 @@
 .method
+	padding-top: 160px
+	padding-bottom: 170px
 	position: relative
-	width: 100%
-	height: 900px
+	overflow: hidden
+
+	&__wave-bg
 
 	&__background
+		pointer-events: none
 		position: absolute
+		left: 0
+		top: 0
 		width: 100%
 		height: 100%
-		top: 0
-		left: 0
+
+		.icon
+			transform: rotate(188deg)
+			position: absolute
+			font-size: 707px
+			stroke: $white
+			opacity: .3
+			bottom: -250px
+			right: -395px
+
+	&__particle-first
+		right: 21px
+		top: -120px
+
+	&__particle-second
+		top: 110px
+		right: -94px
+
+	&__particle-third
+		top: 144px
+		left: 366px
+
+	&__particle-fourth
+		top: 234px
+		left: -73px
+
+	&__particle-fifth
+		top: 510px
+		right: 437px
+
+	&__particle-sixth
+		top: 602px
+		right: -78px
+
+	&__particle-seventh
+		top: 584px
+		left: 340px
+
+	&__particle-eighth
+		left: -104px
+		bottom: 291px
+
+	&__particle-ninth
+		left: -63px
+		bottom: 87px
+
+	&__particle-tenth
+		left: 616px
+		bottom: -114px
+
+	&__title
+
+	&__text-list
+		margin-top: 31px
+		display: flex
+		justify-content: space-between
+		+md
+			flex-direction: column
+
+	&__text-item
+		max-width: 355px
+		width: 33%
+		+md
+			margin-top: 16px
+			max-width: none
+			width: 100%
+
+		br
+			line-height: 3.1
+
+	&__text
+
+	&__video-list
+		margin-top: 116px
+		display: flex
+		justify-content: space-between
+		+sm
+			margin-top: 24px
+			flex-wrap: wrap
+
+	&__video-item
+		width: calc(50% - 12px)
+		+sm
+			margin-top: 16px
+			width: 100%
+
