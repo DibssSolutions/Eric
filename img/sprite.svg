@@ -15,6 +15,13 @@
     </defs><symbol id="icon-arrow-down" viewBox="0 0 11 15">
     
     <use xlink:href="#a" transform="rotate(-90 -7 769)"/>
+</symbol><symbol id="icon-icon-play" viewBox="0 0 14 17">
+    <style>
+        .st0{fill:#fff}
+    </style>
+    <g transform="translate(-522 -4647)">
+        <path id="_x36_sk2a" class="st0" d="M537 4655.5l-15 9.5v-19l15 9.5z"/>
+    </g>
 </symbol><symbol id="icon-waved-oval" viewBox="0 0 762 565">
     
     <use fill-opacity="0" stroke-miterlimit="50" stroke-width="2" xlink:href="#a" transform="translate(146 -1141)"/>
