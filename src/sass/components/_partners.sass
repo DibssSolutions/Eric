@@ -1,0 +1,50 @@
+.partners
+    padding: 88px 0 125px
+    &__inner
+        position: relative
+    &__bg
+        position: absolute
+        top: -163px
+        left: -238px
+        bottom: -208px
+        width: 856px
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+        z-index: -1
+    &__wrap
+        position: relative
+        overflow: auto
+        white-space: nowrap
+    &__list
+        width: 110%
+        position: relative
+        // display: flex
+        padding-bottom: 58px
+        margin-top: 36px
+        display: inline-flex
+        flex-wrap: nowrap
+        // width: auto
+        // white-space: nowrap
+        // overflow: hidden
+        .ps--active-x &
+            width: auto
+    &__item
+        // display: inline-block
+        // width: 1500px
+        max-width: 212px
+        flex-shrink: 0
+        &:not(:first-child)
+            margin-left: 97px
+        img
+            display: block
+            max-width: 100%
+    &__particle-first
+        top: calc(100% + 52px)
+        left: -93px
+    &__particle-second
+        top: 23px
+        left: -1px
+    &__particle-third
+        top: 36px
+        left: 870px
