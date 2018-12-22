@@ -5,6 +5,12 @@ body
 	font-size: 15px
 	+f(15px, 500, 1.667)
 	letter-spacing: .015em
+	&.is-fixed
+		+md
+			position: fixed
+			left: 0
+			top: 0
+			width: 100%
 
 .out
 	overflow: hidden

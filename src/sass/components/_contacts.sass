@@ -6,17 +6,36 @@
         position: relative
     &__content
         display: flex
+        +sm
+            flex-direction: column
+            // text-align: center
+            // justify-content: center
     &__text
         padding-top: 22px
+        +md
+            flex-shrink: 0
     &__block
         margin-top: 19px
+        +xs
+            margin-top: 10px
     &__label
         opacity: 0.5
     &__value
         font-size: 18px
         font-weight: 700
+        +xs
+            font-size: 15px
     &__form
         margin-left: 46px
+        +md
+            margin-left: 25px
+            display: flex
+            justify-content: center
+            width: 100%
+        +sm
+            margin: 25px 0 0
+            display: block
+            // justify-content: center
     &__particle-first
         top: calc(100% + 195px)
         left: -85px

@@ -1,0 +1,24 @@
+<section class="what-get">
+    <div class="what-get__inner inner">
+        <div class="what-get__particle-first particle particle_md particle_rotate-fourthyfive"></div>
+        <div class="what-get__particle-second particle particle_xl particle_rotate-thirty"></div>
+        <div class="what-get__particle-third particle particle_rotate-thirty"></div>
+        <div class="what-get__particle-fourth particle particle_lg particle_rotate-fourthyfive"></div>
+        <h2 class="what-get__title title">
+            Что вы получите?
+        </h2>
+        <ul class="what-get__list">
+            {% for item in [
+              'Свидетельство — о прослушивании курса Эрика Франклина',
+              'Базовые знания по Фрапнклин Методу',
+              'Свидетельство — о прослушивании курса Эрика Франклина'
+              ] %}
+    
+              <li class="what-get__item">
+                <div class="what-get__item-position list-count">0{{ loop.index }}</div>
+                <div class="what-get__item-text">{{ item }}</div>
+              </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

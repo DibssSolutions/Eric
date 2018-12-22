@@ -1,0 +1,47 @@
+.structure
+    padding: 120px 0
+    &__bg
+        position: absolute
+        top: -364px
+        left: -325px
+        bottom: -295px
+        width: 1357px
+        background-size: contain
+        background-position: center
+        background-repeat: no-repeat
+        z-index: -1
+    &__title
+        margin-bottom: 40px
+    &__wrap
+        position: relative
+        overflow: hidden
+    &__list
+        display: flex
+        flex-wrap: nowrap
+        padding-bottom: 54px
+        color: $white
+        font-weight: 700
+    &__item
+        max-width: 355px
+        padding: 23px 20px 17px 30px
+        border-radius: 20px
+        background-color: $violet
+        flex-shrink: 0
+        box-shadow: 0 42px 60px -30px $violet
+        +xs
+            max-width: 280px
+            padding: 15px 20px
+        &:not(:first-child)
+            margin-left: 25px
+    &__particle-first
+        top: -92px
+        left: -69px
+    &__particle-second
+        bottom: -26px
+        left: -16px
+    &__particle-third
+        bottom: 34px
+        left: 826px
+    &__particle-fourth
+        top: -17px
+        left: 842px

@@ -1,0 +1,78 @@
+.schedule
+    &__title
+        margin-bottom: 40px
+    &__wrap
+        display: flex
+        +sm
+            flex-direction: column
+    &__left
+        flex-shrink: 0
+    &__list
+        display: flex
+        flex-direction: column
+        position: relative
+        padding-bottom: 20px
+        +sm
+            flex-direction: row
+            align-items: stretch
+            margin-bottom: 10px
+    &__item
+        padding: 51px 14px 18px
+        border: 2px solid $gray
+        color: $gray
+        text-align: center
+        max-width: 260px
+        min-height: 160px
+        width: 100%
+        border-radius: 20px
+        transition: color .3s, background-color .3s, border-color .3s
+        +sm
+            min-height: 0
+            padding: 0 15px
+            flex-shrink: 0
+        &:not(:last-child)
+            margin-bottom: 15px
+            // +sm
+            //     margin-top: 0
+            //     margin-left: 15px
+        &:not(:first-child)
+            +sm
+                margin-top: 0
+                margin-left: 15px
+        &-text
+            font-size: 30px
+            font-weight: 900
+            +sm
+                font-size: 21px
+        &-description
+            font-size: 14px
+            +sm
+                font-size: 12px
+        &.is-active
+            background-color: $violet
+            color: $white
+            border-color: $violet
+            box-shadow: 0 42px 60px -30px $violet
+        &_mt
+            margin-top: 15px
+    &__right
+        margin-left: 25px
+        +sm
+            margin-left: 0
+    &__container
+    &__container-wrap
+        border-radius: 20px
+        overflow: hidden
+        box-shadow: 0 2px 72px -25px rgba(0, 0, 0, 0.5), 0 42px 60px -30px $violet
+
+.price
+    background-color: $violet
+    color: $white
+    min-height: 0
+    font-weight: 700
+    padding-top: 18px
+    border: none
+    border-radius: 28px
+    box-shadow: 0 20px 30px -15px $violet
+    +sm
+        display: none

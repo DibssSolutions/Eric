@@ -36,9 +36,10 @@
 		letter-spacing: 0
 		+vertical
 		+md
-			padding: 49px 0 0
+			padding: 105px 0
 		+sm
 			position: relative
+			padding-bottom: 70px
 		&:before
 			+sm
 				display: none
@@ -51,15 +52,26 @@
 		letter-spacing: .5px
 		+sm
 			display: block
-			padding-top: 30px
+			padding-top: 15px
+			font-size: 14px
+		&-wrap
+			max-width: 595px
+			+sm
+				max-width: none
 	&__footer
 		margin-top: 40px
 		display: flex
 		align-items: center
+		+xs
+			flex-direction: column
+			margin-top: 20px
 	&__consultation
 		margin-left: 30px
 		color: $lightGray
 		font-weight: 700
+		+xs
+			margin: 15px 0 0
+			text-align: center
 	&__date
 		font-size: 18px
 		font-weight: 700
@@ -68,6 +80,8 @@
 		margin-top: 17px
 		font-size: 48px
 		font-weight: 900
+		line-height: 1.2
+		font-size: 32px
 	&__text
 		margin-top: 20px
 		max-width: 555px
@@ -78,11 +92,15 @@
 		bottom: 32px
 		left: 50%
 		transform: translateX(-50%)
+		+md
+			bottom: 20px
 	&__dots
 		display: flex
 		flex-direction: column
 		align-items: center
 		margin-top: 16px
+		+sm
+			display: none
 	&__dot
 		display: block
 		width: 4px
