@@ -1,0 +1,32 @@
+{% import "data/slider-data.html" as data %}
+<section class="new-life">
+  <div class="new-life__wave-bg wave-bg" style="background-image: url(./img/feedback-bg.svg)"></div>
+  <div class="new-life__inner inner">
+
+    <div class="new-life__background">
+      {{ mixins.icon('waved-oval') }}
+      <p class="new-life__bg-text bg-text">Новая <br/> жизнь</p>
+      <div class="new-life__particle-first particle particle_rotate-thirty"></div>
+      <div class="new-life__particle-second particle particle_rotate-thirty"></div>
+      <div class="new-life__particle-third particle particle_rotate-thirty"></div>
+      <div class="new-life__particle-fourth particle particle_sm"></div>
+      <div class="new-life__particle-fifth particle particle_rotate-thirty"></div>
+      <div class="new-life__particle-sixth particle particle_lg particle_blured particle_rotate-thirty"></div>
+    </div>
+
+    <div class="new-life__wrapper">
+      <div class="new-life__video video">
+        <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video__link">
+          <div class="video__image video__image_lg" style="background-image: url(./img/method-video-second.png)">
+            <button type="button" class="video__btn btn-circle btn-circle_lg">{{ mixins.icon('icon-play') }}</button>
+          </div>
+        </a>
+      </div>
+
+      <div class="new-life__form">
+        {{ mixins.form({subscribe: true}) }}
+      </div>
+    </div>
+  </div>
+
+</section>
