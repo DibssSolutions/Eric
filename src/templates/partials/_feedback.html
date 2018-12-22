@@ -1,16 +1,41 @@
 {% import "data/slider-data.html" as data %}
 <section class="feedback">
-  <div class="method__wave-bg wave-bg" style="background-image: url(./img/feedback-bg.svg)"></div>
+  <div class="feedback__wave-bg wave-bg" style="background-image: url(./img/feedback-bg.svg)"></div>
   <div class="feedback__inner inner">
 
-    <div class="feedback__slider js-slider">
-      {% for item in data.list %}
-        <div class="feedback__slide">
-          <p class="feedback__text">{{ item.text }}</p>
-        </div>
-      {% endfor %}
+    <div class="feedback__background">
+      {{ mixins.icon('waved-oval') }}
+      <div class="feedback__particle-first particle particle particle_sm particle_rotate-thirty"></div>
+      <div class="feedback__particle-second particle particle_rotate-fourthyfive "></div>
+      <div class="feedback__particle-third particle particle particle_rotate-thirty"></div>
+      <div class="feedback__particle-fourth particle particle_sm particle_rotate-thirty "></div>
     </div>
 
+    <h2 class="feedback__title title">Отзывы</h2>
+    <div class="feedback__wrapper">
+      <div class="feedback__prev">
+        <button class="feedback__btn-prev btn-circle btn-circle_lg js-slider-arrow-prev">{{ mixins.icon('arrow-down') }}</button>
+      </div>
+      <div class="feedback__slider js-slider">
+        {% for item in data.list %}
+          <div class="feedback__slide slide">
+            <div class="slide__head">
+              <img src="./img/{{ item.photo }}" alt="Photo" class="slide__photo">
+              <div class="slide__text">
+                <p class="slide__name">{{ item.name }}</p>
+                <p class="slide__position">{{ item.position }}</p>
+              </div>
+            </div>
+            <div class="slide__feedback">
+              <p class="slide__feedback-text">{{ item.text }}</p>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="feedback__next">
+        <button class="feedback__btn-next btn-circle btn-circle_lg js-slider-arrow-next">{{ mixins.icon('arrow-down') }}</button>
+      </div>
+    </div>
   </div>
 
 </section>

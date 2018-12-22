@@ -1,0 +1,62 @@
+.slide
+	color: $white
+
+	&__head
+		background-color: $violet
+		padding: 15px 20px
+		display: flex
+		align-items: center
+		border-radius: 20px
+		box-shadow: 0 42px 60px -30px $violet
+		+sm
+			box-shadow: 0 42px 60px -32px $violet
+
+
+	&__photo
+		width: 90px
+		height: 90px
+		border-radius: 50%
+		border: 2px $white solid
+
+
+	&__text
+		text-align: left
+		margin-left: 20px
+
+	&__name
+		font-size: 21px
+		font-weight: 700
+		+sm
+			font-size: 16px
+
+	&__position
+		+sm
+			font-size: 14px
+
+	&__feedback
+		margin-top: 31px
+		padding: 30px
+		position: relative
+		background-color: $violet
+		border-radius: 40px
+		box-shadow: 0 42px 60px -30px $violet
+		&:before
+			position: absolute
+			content: ''
+			background: url("../img/feedback-arrow.svg")
+			width: 32px
+			height: 30px
+			display: block
+			top: -20px
+			left: 64px
+		+sm
+			box-shadow: 0 42px 60px -38px $violet
+
+
+	&__feedback-text
+		letter-spacing: 0.022em
+		text-align: left
+		font-size: 18px
+		line-height: 1.8
+		+sm
+			font-size: 16px
