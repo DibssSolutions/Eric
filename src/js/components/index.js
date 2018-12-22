@@ -5,3 +5,4 @@ import './_slider';
 import './_fancybox';
 import './_tabs';
 import './_accordeon';
+import './_parallax';
