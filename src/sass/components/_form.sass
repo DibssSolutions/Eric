@@ -6,6 +6,8 @@
     max-width: 450px
     position: relative
     box-shadow: 0 42px 60px -30px $violet
+    +xs
+        padding: 20px 15px
     &_low
         padding-top: 30px
     &__date
@@ -25,10 +27,14 @@
         font-weight: 900
         text-align: center
         line-height: 1.233
+        +xs
+            margin-bottom: 15px
     &__input-group
         position: relative
         &:not(:first-child)
             margin-top: 20px
+            +xs
+                margin-top: 10px
     &__input
         width: 100%
         border-radius: 12px
@@ -47,6 +53,8 @@
         resize: none
     &__submit
         margin-top: 30px
+        +xs
+            margin-top: 15px
     &__footer
         margin-top: 15px
         text-align: center

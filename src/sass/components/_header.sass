@@ -6,9 +6,6 @@
 	z-index: 5
 	color: $white
 	width: 100%
-	padding: 0
-	transition: background-color .3s
-	padding: 25px 0 27px
 	&.is-fixed 
 		background-color: $white
 		color: #363636
@@ -23,7 +20,7 @@
 				color: $violet
 		a
 			color: #363636
-	&.is-open-menu
+	&.is-open
 		+md
 			color: #363636
 	a
@@ -31,6 +28,15 @@
 		text-decoration: none
 		+md
 			color: #363636
+	&__container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		padding: 25px 0 27px
+		+md
+			padding: 12px 0
+		.header.is-fixed &
+			padding: 12px 0
 	&__logo
 		position: relative
 		z-index: 6
@@ -42,9 +48,7 @@
 			display: block
 			max-width: 100%
 	&__wrap
-		float: right
 		display: flex
-		margin-top: 18px
 		+md
 			float: none
 			width: 100%
@@ -65,9 +69,11 @@
 			transition: transform .5s
 			z-index: 5
 			color: #363636
-			.is-open-menu &
+			.is-open &
 				transform: translateX(100%)
 	&__nav
+		height: 100%
+		overflow: auto
 	&__links
 		// float: right
 		margin-top: 20px
@@ -110,6 +116,8 @@
 	&__item
 		&:not(:first-child)
 			margin-left: 25px
+			+lg
+				margin-left: 20px
 			+md
 				margin: 30px 0 0
 	&__link
@@ -147,10 +155,10 @@
 	z-index: 100
 	border: none
 	background-color: transparent
-	margin-top: 32px
+	// margin-top: 32px
 	+md
 		display: block
-		margin-top: 8px
+		// margin-top: 8px
 	&:before
 		content: ""
 		position: absolute
@@ -186,7 +194,7 @@ $h: 3px
 	+xs
 		margin-bottom: 4px
 	.header.is-fixed &,
-	.header.is-open-menu &
+	.header.is-open &
 		background-color: #363636
 .sw-bottom
 	overflow: hidden
@@ -203,7 +211,7 @@ $h: 3px
 		transition: transform 0.3s ease-in-out, opacity .5s ease-in-out, background-color .5s
 		margin-bottom: 5px
 		.header.is-fixed &,
-		.header.is-open-menu &
+		.header.is-open &
 			background-color: #363636
 		+xs
 			margin-bottom: 4px
@@ -218,7 +226,7 @@ $h: 3px
 	border: none
 	transition: transform 0.5s, background-color .5s
 	.header.is-fixed &,
-	.header.is-open-menu &
+	.header.is-open &
 		background-color: #363636
 
 .sandwich.is-active
