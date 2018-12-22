@@ -1,0 +1,22 @@
+<section class="partners">
+    <div class="partners__inner inner">
+        <div class="partners__bg" style="background-image: url(./img/partner-bg.svg)"></div>
+        <div class="partners__particle-first particle particle_rotate-twenty"></div>
+        <div class="partners__particle-second particle particle_lg particle_rotate-twenty"></div>
+        <div class="partners__particle-third particle particle_lg particle_blured particle_rotate-fourthyfive"></div>
+        <h2 class="partners__title title">Партнеры</h2>
+        <div class="partners__wrap js-scrollbar scrollbar">
+            <div class="partners__list">
+                {% for item in [
+                    'aviasales.png',
+                    'aviasales.png',
+                    'aviasales.png'
+                ] %}
+                    <div class="partners__item">
+                        <img src="./img/{{ item }}" alt="partner-logo">
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
