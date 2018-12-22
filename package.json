@@ -66,6 +66,7 @@
     "vide": "^0.5.1",
     "webpack": "^2.2.1",
     "webpack-bundle-analyzer": "^1.5.3",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "@fancyapps/fancybox": "^3.5.6"
   }
 }
