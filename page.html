@@ -162,22 +162,26 @@
           </ul>
           <ul class="method__video-list">
             <li class="method__video-item video">
-              <div class="video__image" style="background-image: url(./img/method-video-first.png)">
-                <button type="button" class="video__btn btn-circle btn-circle_lg">
-                  <svg class="icon icon-icon-play">
-                    <use xlink:href="img/sprite.svg#icon-icon-play"></use>
-                  </svg>
-                </button>
-              </div>
+              <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video__link">
+                <div class="video__image" style="background-image: url(./img/method-video-first.png)">
+                  <button type="button" class="video__btn btn-circle btn-circle_lg">
+                    <svg class="icon icon-icon-play">
+                      <use xlink:href="img/sprite.svg#icon-icon-play"></use>
+                    </svg>
+                  </button>
+                </div>
+              </a>
             </li>
             <li class="method__video-item video">
-              <div class="video__image" style="background-image: url(./img/method-video-second.png)">
-                <button type="button" class="video__btn btn-circle btn-circle_lg">
-                  <svg class="icon icon-icon-play">
-                    <use xlink:href="img/sprite.svg#icon-icon-play"></use>
-                  </svg>
-                </button>
-              </div>
+              <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video__link">
+                <div class="video__image" style="background-image: url(./img/method-video-second.png)">
+                  <button type="button" class="video__btn btn-circle btn-circle_lg">
+                    <svg class="icon icon-icon-play">
+                      <use xlink:href="img/sprite.svg#icon-icon-play"></use>
+                    </svg>
+                  </button>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -238,6 +242,53 @@
                 <div class="for-whom__image-bg" style="background-image: url(./img/for-whom-fourth.png)"></div>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+      <section class="new-life">
+        <div class="new-life__wave-bg wave-bg" style="background-image: url(./img/feedback-bg.svg)"></div>
+        <div class="new-life__inner inner">
+          <div class="new-life__background">
+            <svg class="icon icon-waved-oval">
+              <use xlink:href="img/sprite.svg#icon-waved-oval"></use>
+            </svg>
+            <p class="new-life__bg-text bg-text">Новая <br /> жизнь</p>
+            <div class="new-life__particle-first particle particle_rotate-thirty"></div>
+            <div class="new-life__particle-second particle particle_rotate-thirty"></div>
+            <div class="new-life__particle-third particle particle_rotate-thirty"></div>
+            <div class="new-life__particle-fourth particle particle_sm"></div>
+            <div class="new-life__particle-fifth particle particle_rotate-thirty"></div>
+            <div class="new-life__particle-sixth particle particle_lg particle_blured particle_rotate-thirty"></div>
+          </div>
+          <div class="new-life__wrapper">
+            <div class="new-life__video video">
+              <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video__link">
+                <div class="video__image video__image_lg" style="background-image: url(./img/method-video-second.png)">
+                  <button type="button" class="video__btn btn-circle btn-circle_lg">
+                    <svg class="icon icon-icon-play">
+                      <use xlink:href="img/sprite.svg#icon-icon-play"></use>
+                    </svg>
+                  </button>
+                </div>
+              </a>
+            </div>
+            <div class="new-life__form">
+              <!-- BEGIN FORM -->
+              <form class="form">
+                <div class="form__date">01.02.2019</div>
+                <h3 class="form__title">Запишитесь на курс</h3>
+                <div class="form__group">
+                  <div class="form__input-group"><input type="text" class="form__input js-form-name" placeholder="Имя"></div>
+                  <div class="form__input-group"><input type="text" class="form__input js-form-phone" placeholder="Телефон" minlength="16"></div>
+                  <div class="form__input-group"><input type="text" class="form__input js-form-mail" placeholder="Email"></div>
+                  <div class="form__submit">
+                    <button class="btn btn_wide btn_white btn_bold js-form-submit" type="submit"> записаться на курс </button>
+                  </div>
+                  <div class="form__footer"> Я согласен с условиями обработки персональных данных </div>
+                </div>
+              </form>
+              <!-- END FORM -->
+            </div>
           </div>
         </div>
       </section>
@@ -502,20 +553,83 @@
         </div>
       </section>
       <section class="feedback">
-        <div class="method__wave-bg wave-bg" style="background-image: url(./img/feedback-bg.svg)"></div>
+        <div class="feedback__wave-bg wave-bg" style="background-image: url(./img/feedback-bg.svg)"></div>
         <div class="feedback__inner inner">
-          <div class="feedback__slider js-slider">
-            <div class="feedback__slide">
-              <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          <div class="feedback__background">
+            <svg class="icon icon-waved-oval">
+              <use xlink:href="img/sprite.svg#icon-waved-oval"></use>
+            </svg>
+            <p class="feedback__bg-text bg-text">отзывы</p>
+            <div class="feedback__particle-first particle particle particle_sm particle_rotate-thirty"></div>
+            <div class="feedback__particle-second particle particle_rotate-fourthyfive "></div>
+            <div class="feedback__particle-third particle particle particle_rotate-thirty"></div>
+            <div class="feedback__particle-fourth particle particle_sm particle_rotate-thirty "></div>
+          </div>
+          <h2 class="feedback__title title">Отзывы</h2>
+          <div class="feedback__wrapper">
+            <div class="feedback__prev">
+              <button class="feedback__btn-prev btn-circle btn-circle_lg js-slider-arrow-prev">
+                <svg class="icon icon-arrow-down">
+                  <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                </svg>
+              </button>
             </div>
-            <div class="feedback__slide">
-              <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <div class="feedback__slider js-slider">
+              <div class="feedback__slide slide">
+                <div class="slide__head">
+                  <img src="./img/feedback-photo.jpg" alt="Photo" class="slide__photo">
+                  <div class="slide__text">
+                    <p class="slide__name">Иванова Ольга</p>
+                    <p class="slide__position">Специалист</p>
+                  </div>
+                </div>
+                <div class="slide__feedback">
+                  <p class="slide__feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+              </div>
+              <div class="feedback__slide slide">
+                <div class="slide__head">
+                  <img src="./img/feedback-photo.jpg" alt="Photo" class="slide__photo">
+                  <div class="slide__text">
+                    <p class="slide__name">Иванова Ольга</p>
+                    <p class="slide__position">Специалист</p>
+                  </div>
+                </div>
+                <div class="slide__feedback">
+                  <p class="slide__feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+              </div>
+              <div class="feedback__slide slide">
+                <div class="slide__head">
+                  <img src="./img/feedback-photo.jpg" alt="Photo" class="slide__photo">
+                  <div class="slide__text">
+                    <p class="slide__name">Иванова Ольга</p>
+                    <p class="slide__position">Специалист</p>
+                  </div>
+                </div>
+                <div class="slide__feedback">
+                  <p class="slide__feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+              </div>
+              <div class="feedback__slide slide">
+                <div class="slide__head">
+                  <img src="./img/feedback-photo.jpg" alt="Photo" class="slide__photo">
+                  <div class="slide__text">
+                    <p class="slide__name">Иванова Ольга</p>
+                    <p class="slide__position">Специалист</p>
+                  </div>
+                </div>
+                <div class="slide__feedback">
+                  <p class="slide__feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+              </div>
             </div>
-            <div class="feedback__slide">
-              <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            </div>
-            <div class="feedback__slide">
-              <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <div class="feedback__next">
+              <button class="feedback__btn-next btn-circle btn-circle_lg js-slider-arrow-next">
+                <svg class="icon icon-arrow-down">
+                  <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
