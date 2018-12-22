@@ -1,0 +1,94 @@
+.new-life
+	overflow: hidden
+	position: relative
+	padding-top: 148px
+	padding-bottom: 140px
+
+	&__wave-bg
+
+	&__inner
+		+r(1213)
+			padding-right: 41px
+		+md
+			padding-right: 15px
+
+	&__background
+		pointer-events: none
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+
+		.icon
+			position: absolute
+			font-size: 707px
+			stroke: $white
+			opacity: .4
+			bottom: -188px
+			right: -636px
+
+	&__bg-text
+		text-transform: uppercase
+		writing-mode: vertical-rl
+		transform: rotate(180deg)
+		position: absolute
+		bottom: 49px
+		left: -109px
+		+md
+			left: 30px
+		+sm
+			display: none
+
+	&__particle-first
+		left: 114px
+		top: -93px
+
+	&__particle-second
+		top: 8px
+		left: 517px
+
+	&__particle-third
+		top: 74px
+		right: -88px
+
+	&__particle-fourth
+		top: 241px
+		left: -27px
+
+	&__particle-fifth
+		bottom: 43px
+		left: -104px
+
+	&__particle-sixth
+		bottom: -32px
+		right: -66px
+
+	&__wrapper
+		margin-right: -26px
+		display: flex
+		align-items: center
+		+md
+			flex-direction: row
+			justify-content: center
+			margin-right: 0
+			flex-wrap: wrap
+
+	&__video
+		width: 730px
+		+md
+			max-width: 730px
+			width: 100%
+		+sm
+			display: none
+
+	&__form
+		margin-left: -40px
+		+md
+			margin-top: -40px
+			display: flex
+			justify-content: center
+			width: 100%
+			margin-left: 0
+
+

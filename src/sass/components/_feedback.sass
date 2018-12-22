@@ -1,0 +1,89 @@
+.feedback
+	position: relative
+	padding-top: 110px
+	padding-bottom: 110px
+
+	&__inner
+
+	&__background
+		pointer-events: none
+		position: absolute
+		left: 0
+		top: 0
+		width: 100%
+		height: 100%
+
+		.icon
+			position: absolute
+			font-size: 578px
+			stroke: $white
+			opacity: .3
+			left: -207px
+			top: -66px
+
+	&__bg-text
+		position: absolute
+		bottom: -10px
+		left: 50%
+		transform: translateX(-50%)
+		+sm
+			bottom: 15px
+
+	&__particle-first
+		left: 174px
+		top: 80px
+
+	&__particle-second
+		top: 307px
+		left: -16px
+
+	&__particle-third
+		bottom: -71px
+		left: -91px
+
+	&__particle-fourth
+		bottom: -30px
+		right: 70px
+
+	&__title
+		text-align: center
+
+	&__wrapper
+		display: flex
+		margin-top: -8px
+		justify-content: center
+
+	&__prev
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 15%
+		.icon
+			transform: rotate(90deg)
+		+md
+			display: none
+
+	&__slider
+		display: flex
+		justify-content: center
+		width: 70%
+		+sm
+			width: 100%
+
+
+	&__next
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 15%
+		.icon
+			transform: rotate(-90deg)
+		+md
+			display: none
+
+	&__slide
+		margin: 0 auto
+		max-width: 700px
+		padding: 50px
+		+sm
+			padding:  50px 0
