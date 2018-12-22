@@ -1,0 +1,64 @@
+[data-modal]
+	position: fixed
+	z-index: -1
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	opacity: 0
+	visibility: hidden
+	min-width: 320px
+	// +vertical
+	+clr
+	+gpu
+	overflow: auto
+	transition: opacity 0.3s, visibility 0.3s, z-index 0.3s
+	&.is-open
+		opacity: 1
+		visibility: visible
+		z-index: 100
+		
+[data-modal-container]
+	position: relative
+	z-index: 1
+	font-size: 14px
+	float: right
+	// vertical-align: middle
+	// display: inline-block
+[data-modal-close]
+	position: absolute
+	background-color: transparent
+	font-size: 0
+	.icon
+		font-size: 16px
+
+.modal
+	color: $black 
+	background-color: rgba($black, .2)
+	+sm
+		padding: 20px
+	&__close
+		top: 53px
+		right: 35px
+		width: 40px
+		height: 40px
+	&__container
+		padding: 0 125px
+		max-width: 600px
+		width: 100%
+		background-image: url('../img/modalform-bg.svg')
+		background-color: $white
+		background-position: left bottom
+		background-repeat: no-repeat
+		height: 100vh
+		justify-self: end
+		+sm
+			max-width: none
+			height: 100%
+			padding: 0
+	&__inner
+		height: 100%
+		+vertical
+	&__form
+		vertical-align: middle
+		display: inline-block

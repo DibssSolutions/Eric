@@ -72,4 +72,24 @@
 	</form>
 	<!-- END FORM -->
 	{% endif %}
+	{% if props.modal %}
+	<!-- BEGIN FORM -->
+	<form class="form form_modal">
+		<h3 class="form__title">Запишитесь на курс</h3>
+		<div class="form__group">
+			<div class="form__input-group"><input type="text" class="form__input js-form-name" placeholder="Имя"></div>
+			<div class="form__input-group"><input type="text" class="form__input js-form-mail" placeholder="Email"></div>
+			<div class="form__input-group"><input type="text" class="form__input js-form-phone" placeholder="Телефон" minlength="16"></div>
+			<div class="form__submit">
+				<button class="btn btn_wide btn_bold js-form-submit" type="submit">
+					записаться на курс
+				</button>
+			</div>
+			<div class="form__footer">
+				Я согласен с условиями обработки персональных данных
+			</div>
+		</div>
+	</form>
+	<!-- END FORM -->
+	{% endif %}
 {% endmacro %}

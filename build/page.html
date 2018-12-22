@@ -288,14 +288,14 @@
                   <div class="schedule__item-description"> Место проведения </div>
                 </li>
                 <li class="schedule__item tabs__item schedule__price price">
-                  <div class="price__text"> 20 000 ₽ 1 И 2 ДЕНЬ </div>
+                  <a class="price__text" data-modal-control="registration"> 20 000 ₽ 1 И 2 ДЕНЬ </a>
                 </li>
                 <li class="schedule__item tabs__item schedule__item_mt" data-tabs-control="day3">
                   <div class="schedule__item-text"> ДЕНЬ 3 </div>
                   <div class="schedule__item-description"> Только для действующих танцовщиков и их педагогов </div>
                 </li>
                 <li class="schedule__item tabs__item schedule__price price">
-                  <div class="price__text"> 5 000 ₽ 3 ДЕНЬ </div>
+                  <a class="price__text" data-modal-control="registration"> 5 000 ₽ 3 ДЕНЬ </a>
                 </li>
               </ul>
             </div>
@@ -594,6 +594,33 @@
           </div>
         </div>
       </section>
+      <div class="modal" data-modal="registration">
+        <div class="modal__container" data-modal-container>
+          <div class="modal__inner">
+            <button class="modal__close" data-modal-close>
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="modal__form">
+              <!-- BEGIN FORM -->
+              <form class="form form_modal">
+                <h3 class="form__title">Запишитесь на курс</h3>
+                <div class="form__group">
+                  <div class="form__input-group"><input type="text" class="form__input js-form-name" placeholder="Имя"></div>
+                  <div class="form__input-group"><input type="text" class="form__input js-form-mail" placeholder="Email"></div>
+                  <div class="form__input-group"><input type="text" class="form__input js-form-phone" placeholder="Телефон" minlength="16"></div>
+                  <div class="form__submit">
+                    <button class="btn btn_wide btn_bold js-form-submit" type="submit"> записаться на курс </button>
+                  </div>
+                  <div class="form__footer"> Я согласен с условиями обработки персональных данных </div>
+                </div>
+              </form>
+              <!-- END FORM -->
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->
