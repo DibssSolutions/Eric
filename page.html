@@ -113,11 +113,11 @@
             <svg class="icon icon-waved-oval">
               <use xlink:href="img/sprite.svg#icon-waved-oval"></use>
             </svg>
-            <div class="about-eric__particle-first particle particle_rotate-thirty"></div>
-            <div class="about-eric__particle-second particle particle_sm "></div>
-            <div class="about-eric__particle-third particle particle_rotate-thirty"></div>
-            <div class="about-eric__particle-fourth particle particle_sm "></div>
-            <div class="about-eric__particle-fifth particle particle_lg particle_rotate-thirty"></div>
+            <div class="js-parallax about-eric__particle-first particle particle_rotate-thirty"></div>
+            <div class="js-parallax about-eric__particle-second particle particle_sm "></div>
+            <div class="js-parallax about-eric__particle-third particle particle_rotate-thirty"></div>
+            <div class="js-parallax about-eric__particle-fourth particle particle_sm "></div>
+            <div class="js-parallax about-eric__particle-fifth particle particle_lg particle_rotate-thirty"></div>
           </div>
           <div class="about-eric__wrapper">
             <div class="about-eric__phone">
@@ -137,16 +137,16 @@
             <svg class="icon icon-waved-oval">
               <use xlink:href="img/sprite.svg#icon-waved-oval"></use>
             </svg>
-            <div class="method__particle-first particle particle_rotate-thirty"></div>
-            <div class="method__particle-second particle particle_sm "></div>
-            <div class="method__particle-third particle particle_rotate-thirty"></div>
-            <div class="method__particle-fourth particle particle_lg particle_rotate-thirty "></div>
-            <div class="method__particle-fifth particle particle particle_rotate-thirty"></div>
-            <div class="method__particle-sixth particle particle_sm "></div>
-            <div class="method__particle-seventh particle particle_sm "></div>
-            <div class="method__particle-eighth particle particle_rotate-thirty"></div>
-            <div class="method__particle-ninth particle particle_sm "></div>
-            <div class="method__particle-tenth particle particle_rotate-thirty "></div>
+            <div class="js-parallax method__particle-first particle particle_rotate-thirty"></div>
+            <div class="js-parallax method__particle-second particle particle_sm "></div>
+            <div class="js-parallax method__particle-third particle particle_rotate-thirty"></div>
+            <div class="js-parallax method__particle-fourth particle particle_lg particle_rotate-thirty "></div>
+            <div class="js-parallax method__particle-fifth particle particle particle_rotate-thirty"></div>
+            <div class="js-parallax method__particle-sixth particle particle_sm "></div>
+            <div class="js-parallax method__particle-seventh particle particle_sm "></div>
+            <div class="js-parallax method__particle-eighth particle particle_rotate-thirty"></div>
+            <div class="js-parallax method__particle-ninth particle particle_sm "></div>
+            <div class="js-parallax method__particle-tenth particle particle_rotate-thirty "></div>
           </div>
           <div class="method__title title">О методе</div>
           <ul class="method__text-list">
@@ -162,22 +162,26 @@
           </ul>
           <ul class="method__video-list">
             <li class="method__video-item video">
-              <div class="video__image" style="background-image: url(./img/method-video-first.png)">
-                <button type="button" class="video__btn btn-circle btn-circle_lg">
-                  <svg class="icon icon-icon-play">
-                    <use xlink:href="img/sprite.svg#icon-icon-play"></use>
-                  </svg>
-                </button>
-              </div>
+              <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video__link">
+                <div class="video__image" style="background-image: url(./img/method-video-first.png)">
+                  <button type="button" class="video__btn btn-circle btn-circle_lg">
+                    <svg class="icon icon-icon-play">
+                      <use xlink:href="img/sprite.svg#icon-icon-play"></use>
+                    </svg>
+                  </button>
+                </div>
+              </a>
             </li>
             <li class="method__video-item video">
-              <div class="video__image" style="background-image: url(./img/method-video-second.png)">
-                <button type="button" class="video__btn btn-circle btn-circle_lg">
-                  <svg class="icon icon-icon-play">
-                    <use xlink:href="img/sprite.svg#icon-icon-play"></use>
-                  </svg>
-                </button>
-              </div>
+              <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video__link">
+                <div class="video__image" style="background-image: url(./img/method-video-second.png)">
+                  <button type="button" class="video__btn btn-circle btn-circle_lg">
+                    <svg class="icon icon-icon-play">
+                      <use xlink:href="img/sprite.svg#icon-icon-play"></use>
+                    </svg>
+                  </button>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -185,13 +189,13 @@
       <section class="for-whom">
         <div class="for-whom__inner inner">
           <div class="for-whom__background">
-            <div class="for-whom__particle-first particle particle_lg particle_rotate-thirty"></div>
-            <div class="for-whom__particle-second particle particle_sm "></div>
-            <div class="for-whom__particle-third particle particle_sm "></div>
-            <div class="for-whom__particle-fourth particle particle_lg particle_rotate-thirty "></div>
-            <div class="for-whom__particle-fifth particle particle particle_rotate-thirty"></div>
-            <div class="for-whom__particle-sixth particle particle_sm "></div>
-            <div class="for-whom__particle-seventh particle particle_rotate-thirty"></div>
+            <div class="js-parallax for-whom__particle-first particle particle_lg particle_rotate-thirty"></div>
+            <div class="js-parallax for-whom__particle-second particle particle_sm "></div>
+            <div class="js-parallax for-whom__particle-third particle particle_sm "></div>
+            <div class="js-parallax for-whom__particle-fourth particle particle_lg particle_rotate-thirty "></div>
+            <div class="js-parallax for-whom__particle-fifth particle particle particle_rotate-thirty"></div>
+            <div class="js-parallax for-whom__particle-sixth particle particle_sm "></div>
+            <div class="js-parallax for-whom__particle-seventh particle particle_rotate-thirty"></div>
           </div>
           <div class="for-whom__text">
             <h2 class="for-whom__title title">Для кого</h2>
@@ -241,13 +245,60 @@
           </div>
         </div>
       </section>
+      <section class="new-life">
+        <div class="new-life__wave-bg wave-bg" style="background-image: url(./img/feedback-bg.svg)"></div>
+        <div class="new-life__inner inner">
+          <div class="new-life__background">
+            <svg class="icon icon-waved-oval">
+              <use xlink:href="img/sprite.svg#icon-waved-oval"></use>
+            </svg>
+            <p class="new-life__bg-text bg-text">Новая <br /> жизнь</p>
+            <div class="js-parallax new-life__particle-first particle particle_rotate-thirty"></div>
+            <div class="js-parallax new-life__particle-second particle particle_rotate-thirty"></div>
+            <div class="js-parallax new-life__particle-third particle particle_rotate-thirty"></div>
+            <div class="js-parallax new-life__particle-fourth particle particle_sm"></div>
+            <div class="js-parallax new-life__particle-fifth particle particle_rotate-thirty"></div>
+            <div class="js-parallax new-life__particle-sixth particle particle_lg particle_blured particle_rotate-thirty"></div>
+          </div>
+          <div class="new-life__wrapper">
+            <div class="new-life__video video">
+              <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="video__link">
+                <div class="video__image video__image_lg" style="background-image: url(./img/method-video-second.png)">
+                  <button type="button" class="video__btn btn-circle btn-circle_lg">
+                    <svg class="icon icon-icon-play">
+                      <use xlink:href="img/sprite.svg#icon-icon-play"></use>
+                    </svg>
+                  </button>
+                </div>
+              </a>
+            </div>
+            <div class="new-life__form">
+              <!-- BEGIN FORM -->
+              <form class="form form_subscribe">
+                <div class="form__date">01.02.2019</div>
+                <h3 class="form__title">Запишитесь на курс</h3>
+                <div class="form__group">
+                  <div class="form__input-group"><input type="text" class="form__input js-form-name" placeholder="Имя"></div>
+                  <div class="form__input-group"><input type="text" class="form__input js-form-phone" placeholder="Телефон" minlength="16"></div>
+                  <div class="form__input-group"><input type="text" class="form__input js-form-mail" placeholder="Email"></div>
+                  <div class="form__submit">
+                    <button class="btn btn_wide btn_white btn_bold js-form-submit" type="submit"> записаться на курс </button>
+                  </div>
+                  <div class="form__footer"> Я согласен с условиями обработки персональных данных </div>
+                </div>
+              </form>
+              <!-- END FORM -->
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="structure">
         <div class="structure__inner inner">
           <div class="structure__bg" style="background-image: url(./img/structure-bg.svg)"></div>
-          <div class="structure__particle-first particle particle_rotate-thirty"></div>
-          <div class="structure__particle-second particle particle_md particle_rotate-thirteen"></div>
-          <div class="structure__particle-third particle particle_rotate-thirty"></div>
-          <div class="structure__particle-fourth particle particle_rotate-thirteen"></div>
+          <div class="js-parallax structure__particle-first particle particle_rotate-thirty"></div>
+          <div class="js-parallax structure__particle-second particle particle_md particle_rotate-thirteen"></div>
+          <div class="js-parallax structure__particle-third particle particle_rotate-thirty"></div>
+          <div class="js-parallax structure__particle-fourth particle particle_rotate-thirteen"></div>
           <h2 class="structure__title title"> Структура тренинга </h2>
           <div class="structure__wrap scrollbar js-scrollbar">
             <div class="structure__list">
@@ -480,10 +531,10 @@
       </section>
       <section class="what-get">
         <div class="what-get__inner inner">
-          <div class="what-get__particle-first particle particle_md particle_rotate-fourthyfive"></div>
-          <div class="what-get__particle-second particle particle_xl particle_rotate-thirty"></div>
-          <div class="what-get__particle-third particle particle_rotate-thirty"></div>
-          <div class="what-get__particle-fourth particle particle_lg particle_rotate-fourthyfive"></div>
+          <div class="js-parallax what-get__particle-first particle particle_md particle_rotate-fourthyfive"></div>
+          <div class="js-parallax what-get__particle-second particle particle_xl particle_rotate-thirty"></div>
+          <div class="js-parallax what-get__particle-third particle particle_rotate-thirty"></div>
+          <div class="js-parallax what-get__particle-fourth particle particle_lg particle_rotate-fourthyfive"></div>
           <h2 class="what-get__title title"> Что вы получите? </h2>
           <ul class="what-get__list">
             <li class="what-get__item">
@@ -502,20 +553,83 @@
         </div>
       </section>
       <section class="feedback">
-        <div class="method__wave-bg wave-bg" style="background-image: url(./img/feedback-bg.svg)"></div>
+        <div class="feedback__wave-bg wave-bg" style="background-image: url(./img/feedback-bg.svg)"></div>
         <div class="feedback__inner inner">
-          <div class="feedback__slider js-slider">
-            <div class="feedback__slide">
-              <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          <div class="feedback__background">
+            <svg class="icon icon-waved-oval">
+              <use xlink:href="img/sprite.svg#icon-waved-oval"></use>
+            </svg>
+            <p class="feedback__bg-text bg-text">отзывы</p>
+            <div class="js-parallax feedback__particle-first particle particle particle_sm particle_rotate-thirty"></div>
+            <div class="js-parallax feedback__particle-second particle particle_rotate-fourthyfive "></div>
+            <div class="js-parallax feedback__particle-third particle particle particle_rotate-thirty"></div>
+            <div class="js-parallax feedback__particle-fourth particle particle_sm particle_rotate-thirty "></div>
+          </div>
+          <h2 class="feedback__title title">Отзывы</h2>
+          <div class="feedback__wrapper">
+            <div class="feedback__prev">
+              <button class="feedback__btn-prev btn-circle btn-circle_lg js-slider-arrow-prev">
+                <svg class="icon icon-arrow-down">
+                  <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                </svg>
+              </button>
             </div>
-            <div class="feedback__slide">
-              <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <div class="feedback__slider js-slider">
+              <div class="feedback__slide slide">
+                <div class="slide__head">
+                  <img src="./img/feedback-photo.jpg" alt="Photo" class="slide__photo">
+                  <div class="slide__text">
+                    <p class="slide__name">Иванова Ольга</p>
+                    <p class="slide__position">Специалист</p>
+                  </div>
+                </div>
+                <div class="slide__feedback">
+                  <p class="slide__feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+              </div>
+              <div class="feedback__slide slide">
+                <div class="slide__head">
+                  <img src="./img/feedback-photo.jpg" alt="Photo" class="slide__photo">
+                  <div class="slide__text">
+                    <p class="slide__name">Иванова Ольга</p>
+                    <p class="slide__position">Специалист</p>
+                  </div>
+                </div>
+                <div class="slide__feedback">
+                  <p class="slide__feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+              </div>
+              <div class="feedback__slide slide">
+                <div class="slide__head">
+                  <img src="./img/feedback-photo.jpg" alt="Photo" class="slide__photo">
+                  <div class="slide__text">
+                    <p class="slide__name">Иванова Ольга</p>
+                    <p class="slide__position">Специалист</p>
+                  </div>
+                </div>
+                <div class="slide__feedback">
+                  <p class="slide__feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+              </div>
+              <div class="feedback__slide slide">
+                <div class="slide__head">
+                  <img src="./img/feedback-photo.jpg" alt="Photo" class="slide__photo">
+                  <div class="slide__text">
+                    <p class="slide__name">Иванова Ольга</p>
+                    <p class="slide__position">Специалист</p>
+                  </div>
+                </div>
+                <div class="slide__feedback">
+                  <p class="slide__feedback-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+              </div>
             </div>
-            <div class="feedback__slide">
-              <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-            </div>
-            <div class="feedback__slide">
-              <p class="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor. Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            <div class="feedback__next">
+              <button class="feedback__btn-next btn-circle btn-circle_lg js-slider-arrow-next">
+                <svg class="icon icon-arrow-down">
+                  <use xlink:href="img/sprite.svg#icon-arrow-down"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
@@ -523,9 +637,9 @@
       <section class="partners">
         <div class="partners__inner inner">
           <div class="partners__bg" style="background-image: url(./img/partner-bg.svg)"></div>
-          <div class="partners__particle-first particle particle_rotate-twenty"></div>
-          <div class="partners__particle-second particle particle_lg particle_rotate-twenty"></div>
-          <div class="partners__particle-third particle particle_lg particle_blured particle_rotate-fourthyfive"></div>
+          <div class="js-parallax partners__particle-first particle particle_rotate-twenty"></div>
+          <div class="js-parallax partners__particle-second particle particle_lg particle_rotate-twenty"></div>
+          <div class="js-parallax partners__particle-third particle particle_lg particle_blured particle_rotate-fourthyfive"></div>
           <h2 class="partners__title title">Партнеры</h2>
           <div class="partners__wrap js-scrollbar scrollbar">
             <div class="partners__list">
@@ -554,12 +668,12 @@
       <section class="contacts">
         <div class="wave-bg" style="background-image: url(./img/section-bg.svg)"></div>
         <div class="contacts__inner inner">
-          <div class="contacts__particle-first particle particle_rotate-twenty"></div>
-          <div class="contacts__particle-second particle particle_lg particle_rotate-twenty"></div>
-          <div class="contacts__particle-third particle particle_sm particle_rotate-fourthyseven"></div>
-          <div class="contacts__particle-fourth particle particle_rotate-twenty"></div>
-          <div class="contacts__particle-fifth particle particle_lg particle_br4 particle_rotate-twenty"></div>
-          <div class="contacts__particle-sixth particle particle_rotate-twenty"></div>
+          <div class="js-parallax contacts__particle-first particle particle_rotate-twenty"></div>
+          <div class="js-parallax contacts__particle-second particle particle_lg particle_rotate-twenty"></div>
+          <div class="js-parallax contacts__particle-third particle particle_sm particle_rotate-fourthyseven"></div>
+          <div class="js-parallax contacts__particle-fourth particle particle_rotate-twenty"></div>
+          <div class="js-parallax contacts__particle-fifth particle particle_lg particle_br4 particle_rotate-twenty"></div>
+          <div class="js-parallax contacts__particle-sixth particle particle_rotate-twenty"></div>
           <div class="contacts__content">
             <div class="contacts__text">
               <h2 class="contacts__title title"> Контакты </h2>
