@@ -4,8 +4,29 @@
             <button class="modal__close" data-modal-close>
                 {{mixins.icon('close')}}
             </button>
-            <div class="modal__form">
+            <div class="modal__wrap">
                 {{ mixins.form({modal: true}) }}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" data-modal="success">
+    <div class="modal__container modal__container_sm" data-modal-container>
+        <div class="modal__inner">
+            <button class="modal__close" data-modal-close>
+                {{mixins.icon('close')}}
+            </button>
+            <div class="modal__wrap">
+                <div class="modal__img">
+                    <img src="./img/modal-success.png" alt="img">
+                </div>
+                <h3 class="modal__title">Ваша заявка отправлена</h3>
+                <div class="modal__text">
+                    <p>
+                        Наш менеджер свяжется с вами в ближайшее время
+                    </p>
+                </div>
             </div>
         </div>
     </div>

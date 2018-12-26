@@ -36,7 +36,7 @@
 	color: $black 
 	background-color: rgba($black, .2)
 	+sm
-		padding: 20px
+		// padding: 20px
 	&__close
 		top: 53px
 		right: 35px
@@ -56,9 +56,39 @@
 			max-width: none
 			height: 100%
 			padding: 0
+		&_sm
+			padding: 0 76px
 	&__inner
 		height: 100%
-		+vertical
-	&__form
+		text-align: center
+		display: flex
+		align-items: center
+		justify-content: center
+	&__wrap
+		display: inline-block
+		vertical-align: middle
+	&__title
+		font-size: 30px
+		font-weight: 900
+		letter-spacing: normal
+	&__img
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-bottom: 40px
+		img
+			display: block
+			max-width: 100%
+	&__text
+		font-size: 21px
+	&__wrap
 		vertical-align: middle
 		display: inline-block
+		padding: 15px
+		+xs
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			width: 100%
+			max-width: 450px
