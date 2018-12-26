@@ -8,12 +8,12 @@
 	width: 100%
 	&.is-fixed 
 		background-color: $white
-		color: #363636
+		color: $black
 		position: fixed
 		box-shadow: 0 0 15px rgba(#b8b8b8,.48)
 		border: none
 		.nav__link
-			color: #363636
+			color: $black
 			&.is-active
 				color: $violet
 			+hover
@@ -82,30 +82,14 @@
 		align-items: center
 		+md
 			margin-top: 40px
-		.icon
-			display: block
-			font-size: 20px
-	&__tel
+
+.logo
+	.header.is-fixed &
+		display: none
+img.logo-fixed
+	display: none
+	.header.is-fixed &
 		display: block
-		line-height: 1
-	&__inst
-		display: block
-		position: relative
-		margin-left: 30px
-		margin-top: -2px
-		line-height: 1
-		+lg
-			margin-left: 15px
-		&:after
-			content: ""
-			position: absolute
-			width: 36px
-			height: 36px
-			border-radius: 50%
-			background-color: rgba($white,.1)
-			top: 50%
-			left: 50%
-			transform: translate(-50%,-50%)
 
 .nav
 	&__list
@@ -137,10 +121,11 @@
 			position: absolute
 			content: ""
 			background-color: $violet
-			top: 100%
+			top: -20px
 			left: 0
-			height: 2px
+			height: 5px
 			width: 100%
+			border-radius: 0 0 2.5px 2.5px
 			margin-top: -1px
 			transform: translateX(-101%)
 			transition: transform .3s ease-in-out
@@ -195,7 +180,7 @@ $h: 3px
 		margin-bottom: 4px
 	.header.is-fixed &,
 	.header.is-open &
-		background-color: #363636
+		background-color: $black
 .sw-bottom
 	overflow: hidden
 	display: block
