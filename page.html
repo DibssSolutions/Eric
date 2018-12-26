@@ -19,7 +19,8 @@
           <div class="header__container">
             <h1 class="header__logo">
               <a href="#hero" class="header__link">
-                <img src="./img/logo@2x.png" alt="logo">
+                <img class="logo" src="./img/logo@2x.png" alt="logo">
+                <img class="logo-fixed" src="./img/logo-fixed.png" alt="logo">
               </a>
             </h1>
             <div class="header__wrap">
@@ -87,7 +88,7 @@
                   <div class="hero__btn">
                     <button class="btn" data-modal-control="registration">ЗАПИСАТЬСЯ</button>
                   </div>
-                  <div class="hero__consultation"> Получить бесплатную консультацию </div>
+                  <a href="#" class="hero__consultation"> Получить бесплатную консультацию </a>
                 </div>
               </div>
             </div>
@@ -130,7 +131,7 @@
           </div>
         </div>
       </section>
-      <section class="method">
+      <section class="method js-navigation-section" id="about-method">
         <div class="method__wave-bg wave-bg" style="background-image: url(./img/method-bg.svg)"></div>
         <div class="method__inner inner">
           <div class="method__background">
@@ -186,7 +187,7 @@
           </ul>
         </div>
       </section>
-      <section class="for-whom">
+      <section class="for-whom js-navigation-section" id="for-whom">
         <div class="for-whom__inner inner">
           <div class="for-whom__background">
             <div class="js-parallax for-whom__particle-first particle particle_lg particle_rotate-thirty"></div>
@@ -282,7 +283,7 @@
                   <div class="form__input-group"><input type="text" class="form__input js-form-phone" placeholder="Телефон" minlength="16"></div>
                   <div class="form__input-group"><input type="text" class="form__input js-form-mail" placeholder="Email"></div>
                   <div class="form__submit">
-                    <button class="btn btn_wide btn_white btn_bold js-form-submit" type="submit"> записаться на курс </button>
+                    <button class="btn btn_wide btn_white btn_bold js-form-submit" type="submit" data-modal-control="success"> записаться на курс </button>
                   </div>
                   <div class="form__footer"> Я согласен с условиями обработки персональных данных </div>
                 </div>
@@ -292,7 +293,7 @@
           </div>
         </div>
       </section>
-      <section class="structure">
+      <section class="structure js-navigation-section" id="structure">
         <div class="structure__inner inner">
           <div class="structure__bg" style="background-image: url(./img/structure-bg.svg)"></div>
           <div class="js-parallax structure__particle-first particle particle_rotate-thirty"></div>
@@ -324,7 +325,7 @@
           </div>
         </div>
       </section>
-      <section class="schedule">
+      <section class="schedule js-navigation-section" id="schedule">
         <div class="schedule__inner inner">
           <h2 class="schedule__title title"> Расписание </h2>
           <div class="schedule__wrap tabs" data-tabs>
@@ -529,7 +530,7 @@
           </div>
         </div>
       </section>
-      <section class="what-get">
+      <section class="what-get js-navigation-section" id="certificate">
         <div class="what-get__inner inner">
           <div class="js-parallax what-get__particle-first particle particle_md particle_rotate-fourthyfive"></div>
           <div class="js-parallax what-get__particle-second particle particle_xl particle_rotate-thirty"></div>
@@ -552,7 +553,7 @@
           </ul>
         </div>
       </section>
-      <section class="feedback">
+      <section class="feedback  js-navigation-section" id="reviews">
         <div class="feedback__wave-bg wave-bg" style="background-image: url(./img/feedback-bg.svg)"></div>
         <div class="feedback__inner inner">
           <div class="feedback__background">
@@ -634,7 +635,7 @@
           </div>
         </div>
       </section>
-      <section class="partners">
+      <section class="partners js-navigation-section" id="partners">
         <div class="partners__inner inner">
           <div class="partners__bg" style="background-image: url(./img/partner-bg.svg)"></div>
           <div class="js-parallax partners__particle-first particle particle_rotate-twenty"></div>
@@ -665,7 +666,7 @@
           </div>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts js-navigation-section" id="contacts">
         <div class="wave-bg" style="background-image: url(./img/section-bg.svg)"></div>
         <div class="contacts__inner inner">
           <div class="js-parallax contacts__particle-first particle particle_rotate-twenty"></div>
@@ -696,7 +697,7 @@
                   <div class="form__input-group"><input type="text" class="form__input js-form-mail" placeholder="Email"></div>
                   <div class="form__input-group"><input type="text" class="form__input js-form-phone" placeholder="Телефон" minlength="16"></div>
                   <div class="form__submit">
-                    <button class="btn btn_wide btn_white btn_bold js-form-submit" type="submit">
+                    <button class="btn btn_wide btn_white btn_bold js-form-submit" type="submit" data-modal-control="success">
                       <span class="btn__text">отправить</span>
                     </button>
                   </div>
@@ -716,7 +717,7 @@
                 <use xlink:href="img/sprite.svg#icon-close"></use>
               </svg>
             </button>
-            <div class="modal__form">
+            <div class="modal__wrap">
               <!-- BEGIN FORM -->
               <form class="form form_modal">
                 <h3 class="form__title">Запишитесь на курс</h3>
@@ -725,12 +726,32 @@
                   <div class="form__input-group"><input type="text" class="form__input js-form-mail" placeholder="Email"></div>
                   <div class="form__input-group"><input type="text" class="form__input js-form-phone" placeholder="Телефон" minlength="16"></div>
                   <div class="form__submit">
-                    <button class="btn btn_wide btn_bold js-form-submit" type="submit"> записаться на курс </button>
+                    <button class="btn btn_wide btn_bold js-form-submit" type="submit" data-modal-control="success"> записаться на курс </button>
                   </div>
                   <div class="form__footer"> Я согласен с условиями обработки персональных данных </div>
                 </div>
               </form>
               <!-- END FORM -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" data-modal="success">
+        <div class="modal__container modal__container_sm" data-modal-container>
+          <div class="modal__inner">
+            <button class="modal__close" data-modal-close>
+              <svg class="icon icon-close">
+                <use xlink:href="img/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <div class="modal__wrap">
+              <div class="modal__img">
+                <img src="./img/modal-success.png" alt="img">
+              </div>
+              <h3 class="modal__title">Ваша заявка отправлена</h3>
+              <div class="modal__text">
+                <p> Наш менеджер свяжется с вами в ближайшее время </p>
+              </div>
             </div>
           </div>
         </div>
