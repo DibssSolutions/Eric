@@ -36,7 +36,7 @@
 	color: $black 
 	background-color: rgba($black, .2)
 	+sm
-		padding: 20px
+		// padding: 20px
 	&__close
 		top: 53px
 		right: 35px
@@ -62,3 +62,10 @@
 	&__form
 		vertical-align: middle
 		display: inline-block
+		+xs
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			width: 100%
+			max-width: 450px

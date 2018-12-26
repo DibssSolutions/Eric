@@ -1,13 +1,13 @@
 .what-get
     padding: 165px 0 150px
     &__title
-        padding-bottom: 43px
+        margin-bottom: 18px
     &__list
         display: flex
         align-items: center
-        justify-content: space-between
+        // justify-content: space-between
+        flex-wrap: wrap
         +md
-            flex-wrap: wrap
             justify-content: center
         +sm
             flex-direction: column
@@ -15,10 +15,12 @@
     &__item
         display: flex
         align-items: center
-        &:not(:first-child)
-            margin-left: 25px
+        max-width: 355px
+        margin-top: 25px
+        &:not(:last-child)
+            margin-right: 24px
             +md
-                margin: 25px 0
+                margin: 25px 0 0
             +sm
                 margin: 25px 0 0
     &__item-position
