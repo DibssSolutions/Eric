@@ -94,12 +94,15 @@ img.logo-fixed
 		display: block
 
 .nav
+	overflow: visible
 	&__list
+		overflow: visible
 		display: flex
 		+md
 			flex-direction: column
 			align-items: center
 	&__item
+		overflow: visible
 		&:not(:first-child)
 			margin-left: 33.9px
 			+lg
@@ -112,6 +115,7 @@ img.logo-fixed
 		overflow: hidden
 		display: block
 		&.is-active
+			overflow: visible
 			color: $violet
 			&:after
 				transform: translateX(0)
@@ -123,13 +127,13 @@ img.logo-fixed
 			position: absolute
 			content: ""
 			background-color: $violet
-			top: -20px
+			top: -29px
 			left: 0
 			height: 5px
 			width: 100%
 			border-radius: 0 0 2.5px 2.5px
 			margin-top: -1px
-			transform: translateX(-101%)
+			transform: translatey(-101%)
 			transition: transform .3s ease-in-out
 
 /*Sandwich*/

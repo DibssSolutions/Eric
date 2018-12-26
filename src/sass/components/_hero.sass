@@ -89,9 +89,13 @@
 		font-weight: 700
 		text-decoration: none
 		display: block
+		border-bottom: 1px transparent solid
+		transition: border 300ms
 		+xs
 			margin: 15px 0 0
 			text-align: center
+		+hover
+			border-color: $lightGray
 	&__date
 		font-size: 18px
 		font-weight: 700
