@@ -2,6 +2,8 @@
 	padding-top: 168px
 	padding-bottom: 170px
 	position: relative
+	+md
+		padding-bottom: 135px
 
 	&__wave-bg
 
@@ -70,6 +72,7 @@
 		flex-wrap: wrap
 		justify-content: space-between
 		+md
+			margin-top: 24px
 			flex-direction: column
 
 	&__text-item
@@ -78,9 +81,10 @@
 		width: 33.33%
 		padding: 0 12px
 		+md
-			margin-top: 16px
 			max-width: none
 			width: 100%
+			&:not(:first-child)
+				margin-top: 16px
 
 		br
 			line-height: 3.1
@@ -92,12 +96,12 @@
 		display: flex
 		justify-content: space-between
 		+sm
-			margin-top: 24px
+			margin-top: 0
 			flex-wrap: wrap
 
 	&__video-item
 		width: calc(50% - 12px)
 		+sm
-			margin-top: 16px
+			margin-top: 24px
 			width: 100%
 
