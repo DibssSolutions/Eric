@@ -1,6 +1,11 @@
 .video
 	position: relative
 
+	&_scaled
+		transition: transform 300ms
+		+hover
+			transform: scale(1.02)
+
 	&__image
 		min-height: 350px
 		background-position: center
