@@ -23,19 +23,21 @@
 	&__list
 		display: flex
 		flex-wrap: nowrap
-		padding-bottom: 66px
+		padding-bottom: 6px
 		color: $white
 		font-weight: 700
 
 	&__item
+		margin-bottom: 60px
+		min-height: 146px
 		max-width: 355px
 		padding: 20px 30px 26px 30px
 		border-radius: 20px
 		background-color: $violet
 		flex-shrink: 0
 		box-shadow: 0 42px 60px -30px $violet
-		+xs
-			max-width: 280px
+		+md
+			max-width: none
 			padding: 15px 20px
 
 		&:not(:first-child)

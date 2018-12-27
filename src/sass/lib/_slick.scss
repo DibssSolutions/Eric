@@ -62,6 +62,7 @@
     }
 }
 .slick-slide {
+    text-align: center;
     margin:  0 2px;
     float: left;
     height: 100%;
@@ -69,9 +70,7 @@
     [dir="rtl"] & {
         float: right;
     }
-    + div {
-        text-align: center;
-    }
+
     img {
         display: block;
     }
