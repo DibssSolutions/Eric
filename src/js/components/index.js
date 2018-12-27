@@ -9,3 +9,4 @@ import './_modal';
 import './_parallax';
 import './_header';
 import './_menuActive';
+import './_scrollBtn';
