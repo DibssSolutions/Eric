@@ -2,7 +2,6 @@ import PerfectScrollbar from 'perfect-scrollbar';
 const partners = $('.js-scrollbar');
 partners.each((i, el) => {
   let partner = el;
-  console.log(partner);
   const psPartners = new PerfectScrollbar(partner, {
     useBothWheelAxes: true,
     suppressScrollY: true
