@@ -1,87 +1,107 @@
 .form
-    padding: 95px 50px 31px
-    background-color: $violet
-    border-radius: 20px
-    color: $white
-    max-width: 450px
-    position: relative
-    box-shadow: 0 42px 60px -30px $violet
-    +xs
-        padding: 20px 15px
-    &_low
-        padding-top: 30px
-    &_modal
-        padding: 0
-        background: none
-        color: $black
-        box-shadow: none
-        +xs
-            padding: 0
-    &_subscribe
-        +xs
-            padding-top: 77px
-    &__date
-        position: absolute
-        left: 50%
-        top: 0
-        transform: translateX(-50%)
-        padding: 24px 83px
-        background-color: $white
-        color: $violet
-        border-radius: 0 0 20px 20px
-        font-size: 18px
-        font-weight: 700
-        +xs
-            padding: 15px 25px
-    &__title
-        margin-bottom: 31px
-        font-size: 30px
-        font-weight: 900
-        text-align: center
-        line-height: 1.233
-        +xs
-            margin-bottom: 15px
-    &__input-group
-        position: relative
-        .form_modal &
-            background-color: $white
-        &:not(:first-child)
-            margin-top: 20px
-            +xs
-                margin-top: 10px
-    &__input
-        width: 100%
-        border-radius: 12px
-        border: 1px solid $white
-        background-color: transparent
-        padding: 18px 20px 16px
-        color: $white
-        font-family: $montserrat
-        font-size: 15px
-        font-weight: 500
-        height: 55px
-        +placeholder
-            color: $white
-            .form_modal &
-                color: $black
-        &:focus
-            +placeholder
-                font-size: 0
-        .form_modal &
-            border-color: $black
-            color: $black
-    &__textarea
-        height: 135px
-        resize: none
-    &__submit
-        margin-top: 30px
-        +xs
-            margin-top: 15px
-    &__footer
-        margin-top: 15px
-        text-align: center
-        font-size: 10px
-        opacity: 0.7
-        font-weight: 400
-        line-height: 1
+	padding: 95px 50px 31px
+	background-color: $violet
+	border-radius: 20px
+	color: $white
+	max-width: 450px
+	position: relative
+	box-shadow: 0 42px 60px -30px $violet
+	+xs
+		padding: 20px 15px
+
+	&_low
+		padding-top: 30px
+
+	&_question
+		min-width: 450px
+		+md
+			min-width: auto
+
+	&_modal
+		padding: 0
+		background: none
+		color: $black
+		box-shadow: none
+		+xs
+			padding: 0
+
+	&_subscribe
+		+xs
+			padding-top: 77px
+
+	&__date
+		position: absolute
+		left: 50%
+		top: 0
+		transform: translateX(-50%)
+		padding: 20px 85px
+		background-color: $white
+		color: $violet
+		border-radius: 0 0 20px 20px
+		font-size: 18px
+		font-weight: 700
+		+xs
+			padding: 15px 25px
+
+	&__title
+		margin-bottom: 31px
+		font-size: 30px
+		font-weight: 900
+		text-align: center
+		line-height: 1.233
+		+xs
+			margin-bottom: 15px
+
+	&__input-group
+		position: relative
+
+		.form_modal &
+			background-color: $white
+
+		&:not(:first-child)
+			margin-top: 18.5px
+			+xs
+				margin-top: 10px
+
+	&__input
+		width: 100%
+		border-radius: 12px
+		border: 1px solid $white
+		background-color: transparent
+		padding: 18px 20px 16px
+		color: $white
+		font-family: $montserrat
+		font-size: 15px
+		font-weight: 500
+		height: 55px
+		+placeholder
+			color: $white
+			.form_modal &
+				color: $black
+
+		&:focus
+			+placeholder
+				font-size: 0
+
+		.form_modal &
+			border-color: $black
+			color: $black
+
+	&__textarea
+		height: 135px
+		resize: none
+
+	&__submit
+		margin-top: 30px
+		+xs
+			margin-top: 15px
+	.btn
+		font-size: 16px
+	&__footer
+		margin-top: 15px
+		text-align: center
+		font-size: 10px
+		opacity: 0.7
+		font-weight: 400
+		line-height: 1
 

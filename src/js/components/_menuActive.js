@@ -1,5 +1,5 @@
-import { WIN, ACTIVE } from '../constants';
-import { SCROLL_TO } from '../utils';
+import {WIN, ACTIVE} from '../constants';
+import {SCROLL_TO} from '../utils';
 
 ;(function() {
 
@@ -12,21 +12,22 @@ import { SCROLL_TO } from '../utils';
       let $that = $(this);
       let id = $that.attr('id');
       let headerHeight = $('.header').innerHeight();
-      if (Math.floor($that.offset().top-headerHeight) <= $scrollPos && Math.floor($that.offset().top-headerHeight) + $that.innerHeight() >= $scrollPos) {
+      if (Math.floor($that.offset().top - headerHeight) <= $scrollPos && Math.floor($that.offset().top - headerHeight) + $that.innerHeight() >= $scrollPos) {
         link.removeClass(ACTIVE);
-        $('[href="#'+id+'"]').addClass(ACTIVE);
+        $('[href="#' + id + '"]').addClass(ACTIVE);
       }
-        
+
     });
   };
 
-  link.on('click', function() {
-  	let thisAttr = $(this).attr('href');
-  	let position = $(thisAttr).offset().top;
-    let headerHeight = $('.header').innerHeight();
-    SCROLL_TO(Math.floor(position-headerHeight/1.2));
+  link.on('click', function(event) {
+    event.preventDefault();
+    let thisAttr = $(this).attr('href');
+    let position = $(thisAttr).offset().top;
+    let headerHeight = $('.header').outerHeight();
+    SCROLL_TO(Math.floor(position - headerHeight));
   });
 
   WIN.on('scroll touchend', onScroll);
-  
+
 })();
