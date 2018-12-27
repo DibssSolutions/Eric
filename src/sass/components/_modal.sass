@@ -33,6 +33,7 @@
 		font-size: 16px
 
 .modal
+	overflow-x: hidden
 	color: $black 
 	background-color: rgba($black, .2)
 	+sm
@@ -42,7 +43,13 @@
 		right: 35px
 		width: 40px
 		height: 40px
+		+sm
+			right: 8px
+			top: 8px
 	&__container
+		display: flex
+		transition: transform 300ms
+		transform: translateX(100%)
 		padding: 0 125px
 		max-width: 600px
 		width: 100%
@@ -52,14 +59,18 @@
 		background-repeat: no-repeat
 		height: 100vh
 		justify-self: end
+		.is-open &
+			transform: translateX(0)
 		+sm
 			max-width: none
-			height: 100%
-			padding: 0
+			min-height: 100%
+			height: auto
+			padding: 15px
 		&_sm
 			padding: 0 76px
 	&__inner
-		height: 100%
+		width: 100%
+		min-height: 100%
 		text-align: center
 		display: flex
 		align-items: center
@@ -86,9 +97,5 @@
 		display: inline-block
 		padding: 15px
 		+xs
-			position: absolute
-			left: 50%
-			top: 50%
-			transform: translate(-50%, -50%)
 			width: 100%
 			max-width: 450px

@@ -25,7 +25,7 @@ import {SCROLL_TO} from '../utils';
     let thisAttr = $(this).attr('href');
     let position = $(thisAttr).offset().top;
     let headerHeight = $('.header').outerHeight();
-    SCROLL_TO(Math.floor(position - headerHeight));
+    SCROLL_TO(Math.floor(position - 80));
   });
 
   WIN.on('scroll touchend', onScroll);
