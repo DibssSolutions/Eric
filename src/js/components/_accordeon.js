@@ -4,9 +4,12 @@ $(document).ready(function() {
 });
   
 function accordeon() {
-  $('.js-accordeon-head').not($(this)).removeClass('is-active');
+  let parentContainer = $(this).parents('.js-accordeon-parent');
+  let accordeonsHead = parentContainer.find('.js-accordeon-head');
+  let accordeonsBody = parentContainer.find('.js-accordeon-body');
+  accordeonsHead.not($(this)).removeClass('is-active');
   $(this).toggleClass('is-active');
-  $('.js-accordeon-body').not($(this).next()).slideUp(400);
+  accordeonsBody.not($(this).next()).slideUp(400);
   $(this).next().slideToggle(400);
   
 }
