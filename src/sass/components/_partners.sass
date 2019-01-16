@@ -24,16 +24,23 @@
         margin-top: 36px
         display: block
         flex-wrap: nowrap
+        font-size: 0
         .ps--active-x &
             width: auto
+        .slick-track
+            display: flex
+            align-items: center
     &__item
         max-width: 212px
         flex-shrink: 0
+        max-height: 118px
         &:not(:first-child)
             margin-left: 97px
         img
             display: block
             max-width: 100%
+            max-height: 118px
+            margin: 0 auto
     &__particle-first
         top: calc(100% + 52px)
         left: -93px
