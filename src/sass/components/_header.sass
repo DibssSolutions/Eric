@@ -117,15 +117,18 @@ img.logo-fixed
 		position: relative
 		overflow: hidden
 		display: block
+		.header.is-fixed &
 		&.is-active
-			overflow: visible
 			color: $violet
+			overflow: visible
 			&:after
-				transform: translateX(0)
+				transform: translateY(0)
 		+hover
 			color: $violet
-			&:after
-				transform: translateX(0)
+			// &:after
+			// 	transform: translateX(0)
+		+md
+			overflow: hidden
 		&:after
 			position: absolute
 			content: ""
@@ -136,8 +139,11 @@ img.logo-fixed
 			width: 100%
 			border-radius: 0 0 2.5px 2.5px
 			margin-top: -1px
-			transform: translatey(-101%)
+			transform: translateY(-101%)
 			transition: transform .3s ease-in-out
+			+md
+				top: 100%
+				transform: translateY(101%)
 
 /*Sandwich*/
 .toggle-menu
