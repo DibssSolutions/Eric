@@ -17,6 +17,12 @@ $('.js-slider-feedback').slick({
         nextArrow: $('.js-slider-arrow-next'),
         dots: true
       }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        adaptiveHeight: true
+      }
     }
   ]
 });
