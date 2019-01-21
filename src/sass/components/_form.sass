@@ -90,6 +90,8 @@
 		.form_modal &
 			border-color: $black
 			color: $black
+		&.error
+			border-color: red
 
 	&__textarea
 		height: 135px
@@ -111,4 +113,15 @@
 		opacity: 0.7
 		font-weight: 400
 		line-height: 1
+
+
+label.error
+	// +helvetica
+	transition-property: opacity, max-height
+	transition-duration: 300ms
+	max-height: 0
+	color: red
+	font-size: 12px
+	font-weight: 300
+	margin-top: 4px
 

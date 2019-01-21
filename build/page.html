@@ -281,15 +281,15 @@
             </div>
             <div class="new-life__form">
               <!-- BEGIN FORM -->
-              <form class="form form_subscribe">
+              <form class="form form_subscribe js-form">
                 <div class="form__date">01.02.2019</div>
                 <h3 class="form__title">Запишитесь на курс</h3>
                 <div class="form__group">
-                  <div class="form__input-group"><input type="text" class="form__input js-form-name" placeholder="Имя"></div>
-                  <div class="form__input-group"><input type="text" class="form__input js-form-phone" placeholder="Телефон" minlength="16"></div>
-                  <div class="form__input-group"><input type="text" class="form__input js-form-mail" placeholder="Email"></div>
+                  <div class="form__input-group"><input type="text" name="name" class="form__input js-form-name" placeholder="Имя"></div>
+                  <div class="form__input-group"><input type="text" name="phone" class="form__input js-form-phone" placeholder="Телефон" minlength="16"></div>
+                  <div class="form__input-group"><input type="text" name="email" class="form__input js-form-mail" placeholder="Email"></div>
                   <div class="form__submit">
-                    <button class="btn btn_wide btn_white btn_bold js-form-submit" type="submit" data-modal-control="success"> записаться на курс </button>
+                    <button class="btn btn_wide btn_white btn_bold js-form-submit" type="submit"> записаться на курс </button>
                   </div>
                   <div class="form__footer"> Я согласен с условиями обработки персональных данных </div>
                 </div>
@@ -707,12 +707,12 @@
               <form class="form form_low form_question js-form">
                 <h3 class="form__title">Задать вопрос</h3>
                 <div class="form__group">
-                  <div class="form__input-group"><textarea type="text" class="form__input form__textarea" placeholder="Сообщение"></textarea></div>
-                  <div class="form__input-group"><input type="text" class="form__input js-form-name" placeholder="Имя"></div>
-                  <div class="form__input-group"><input type="text" class="form__input js-form-phone" placeholder="Телефон" minlength="16"></div>
-                  <div class="form__input-group"><input type="text" class="form__input js-form-mail" placeholder="Email"></div>
+                  <div class="form__input-group"><textarea type="text" name="message" class="form__input form__textarea" placeholder="Сообщение"></textarea></div>
+                  <div class="form__input-group"><input type="text" name="name" class="form__input js-form-name" placeholder="Имя"></div>
+                  <div class="form__input-group"><input type="text" name="phone" class="form__input js-form-phone" placeholder="Телефон" minlength="16"></div>
+                  <div class="form__input-group"><input type="text" name="email" class="form__input js-form-mail" placeholder="Email"></div>
                   <div class="form__submit">
-                    <button class="btn btn_wide btn_white btn_bold js-form-submit" type="submit" data-modal-control="success">
+                    <button class="btn btn_wide btn_white btn_bold js-form-submit" type="submit">
                       <span class="btn__text">отправить</span>
                     </button>
                   </div>
@@ -739,14 +739,14 @@
             </button>
             <div class="modal__wrap">
               <!-- BEGIN FORM -->
-              <form class="form form_modal">
+              <form class="form form_modal js-form">
                 <h3 class="form__title">Запишитесь на курс</h3>
                 <div class="form__group">
-                  <div class="form__input-group"><input type="text" class="form__input js-form-name" placeholder="Имя"></div>
-                  <div class="form__input-group"><input type="text" class="form__input js-form-mail" placeholder="Email"></div>
-                  <div class="form__input-group"><input type="text" class="form__input js-form-phone" placeholder="Телефон" minlength="16"></div>
+                  <div class="form__input-group"><input type="text" name="name" class="form__input js-form-name" placeholder="Имя"></div>
+                  <div class="form__input-group"><input type="text" name="email" class="form__input js-form-mail" placeholder="Email"></div>
+                  <div class="form__input-group"><input type="text" name="phone" class="form__input js-form-phone" placeholder="Телефон" minlength="16"></div>
                   <div class="form__submit">
-                    <button class="btn btn_wide btn_bold js-form-submit" type="submit" data-modal-control="success"> записаться на курс </button>
+                    <button class="btn btn_wide btn_bold js-form-submit" type="submit"> записаться на курс </button>
                   </div>
                   <div class="form__footer"> Я согласен с условиями обработки персональных данных </div>
                 </div>
@@ -756,7 +756,7 @@
           </div>
         </div>
       </div>
-      <div class="modal" data-modal="success">
+      <div class="modal js-success" data-modal="success">
         <div class="modal__container modal__container_sm" data-modal-container>
           <div class="modal__inner">
             <button class="modal__close" data-modal-close>
@@ -774,6 +774,13 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="js-error message-sending js-message-sending">
+        <div class="message-sending__container">
+          <div class="message-sending__inner js-message-sending-inner js-error-block">
+          </div>
+          <button class="message-sending__x js-close">&#10006;</button>
         </div>
       </div>
     </div>

@@ -10,3 +10,5 @@ import './_parallax';
 import './_header';
 import './_menuActive';
 import './_scrollBtn';
+import './_form_validation';
+import './_form_submit';

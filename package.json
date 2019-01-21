@@ -15,6 +15,7 @@
   },
   "authors": "<DibssSolutions>",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.6",
     "autoprefixer": "^6.3.3",
     "babel-core": "^6.18.2",
     "babel-eslint": "^7.2.3",
@@ -53,21 +54,21 @@
     "htmlhint": "^0.9.13",
     "husky": "^0.13.2",
     "jquery": "^3.1.1",
+    "jquery-validation": "^1.19.0",
     "lint-staged": "^4.0.2",
     "lodash": "^4.3.0",
     "lost": "^7.1.0",
+    "paroller.js": "^1.4.4",
     "perfect-scrollbar": "^1.4.0",
     "postcss-csso": "^2.0.0",
     "require-dir": "^0.3.2",
     "require-yaml": "^0.0.1",
     "run-sequence": "^1.1.5",
+    "slick-carousel": "^1.8.1",
     "svg4everybody": "^2.1.9",
     "through2": "^2.0.1",
     "vide": "^0.5.1",
     "webpack": "^2.2.1",
-    "webpack-bundle-analyzer": "^1.5.3",
-    "slick-carousel": "^1.8.1",
-    "@fancyapps/fancybox": "^3.5.6",
-    "paroller.js": "^1.4.4"
+    "webpack-bundle-analyzer": "^1.5.3"
   }
 }
